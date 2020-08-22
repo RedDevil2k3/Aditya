@@ -1,0 +1,29 @@
+_______________Alexa Top Site JSON Queries :-
+
+
+
+DataUrl -
+cat AlexaUSA1C.json | jq '.Ats.Results.Result.Alexa.TopSites.Country.Sites.Site[].DataUrl'
+
+All details per site -
+cat AlexaUSA1C.json | jq '.Ats.Results.Result.Alexa.TopSites.Country.Sites.Site'
+
+Command Parameters -
+cat AlexaUSA1C.json | jq '.Ats.Results.Result.Alexa.Request.Arguments.Argument'
+
+Country Name -
+cat AlexaUSA1C.json | jq '.Ats.Results.Result.Alexa.TopSites.Country.CountryName'
+
+Country Code -
+cat AlexaUSA1C.json | jq '.Ats.Results.Result.Alexa.TopSites.Country.CountryCode'
+
+Total number of sites for a country -
+cat AlexaUSA1C.json | jq '.Ats.Results.Result.Alexa.TopSites.Country.TotalSites'
+
+
+
+__________________For Cookies :-
+
+Cookie-Domain : cat alexausa1mcookie.json | jq '.cookies[].domain'
+
+node improved_cookies
